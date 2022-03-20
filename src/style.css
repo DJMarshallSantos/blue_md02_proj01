@@ -1,31 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sarpanch&display=swap");
 
-body {
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
     background-color: #272727;
 }
 
 .header {
     width: 100%;
-    height: 30vh;
+    height: 35vh;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     flex-direction: column;
     background-color: yellow;
 }
 
-.titleContainer {
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 20vh;
-}
-
 .title {
-    margin-top: 1%;
+    margin: 1.5% 10%;
+    flex-grow: 1;
+    justify-content: center;
     color: #272727;
     font-size: 4rem;
     font-family: "Raleway", sans-serif;
@@ -35,49 +36,52 @@ body {
 .animationLogo {
     display: flex;
     position: absolute;
-    top: 12vh;
+    top: 20vh;
     animation: ease;
     animation-name: run;
     animation-duration: 5s;
 }
 
 .logo {
-    width: 170px;
-    height: 110px;
+    width: 150px;
+    height: 100px;
+    padding-top: 5%;
     filter: drop-shadow(2px 2px 4px blue);
 }
 
-.mp3-player{
-    width: 100px;
+#my-audio{
+    margin-top: 2%;
+    width: 50%;
     height: 70px;
 }
 .content {
     display: flex;
     width: 100%;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     background-color: #272727;
+    padding: 0% 3%;
 }
 
 .info {
     display: flex;
     flex-direction: column;
     width: 60%;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     font-family: "Sarpanch", sans-serif;
-    font-weight: 600;
-    font-size: 1.7rem;
+    font-weight: 400;
+    font-size: 1.5rem;
     color: rgba(245, 241, 241, 0.527);
 }
 
 .textLabels {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
-    margin: 1% 0% 1% 1%;
+    margin: 1% 1% 1% 1%;
 }
 
 #alias{
@@ -131,7 +135,7 @@ body {
 
 .container div{
     position: relative;
-    width: 260px;
+    width: 170px;
     height: 60px;
     display: inline-block;
     background: #fff;
